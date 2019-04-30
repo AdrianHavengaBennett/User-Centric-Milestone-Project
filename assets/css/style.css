@@ -28,19 +28,14 @@ h6 {
     margin: 0;
 }
 
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .container-fluid {
     padding: 0;
     min-width: 100%
-}
-
-.background-image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-    z-index: -1;
 }
 
 .header {
@@ -57,23 +52,27 @@ h6 {
     padding-bottom: 16px;
 }
 
-.menu-item {
-    background-color: rgba(244,121,26,0.5);
+.section-header {
     text-align: center;
-    padding: 20px 20px;
+}
+
+.menu-item {
+    background-color: rgba(244, 121, 26, 0.5);
+    padding: 60px 20px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .menu-item i {
     font-size: 32px;
     display: inline-block;
-    color: #e9f1f4;
+    color: #000;
 }
 
 .menu-heading {
     font-family: "Dosis", sans-serif;
-    font-weight: 200;
-    color: #e9f1f4;
+    font-weight: 400;
+    color: #000;
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
@@ -81,23 +80,25 @@ h6 {
 }
 
 .enter-button {
+    border: 1px solid #000;
+    background-color: rgba(244, 121, 26, 0.5);
     text-align: center;
     text-transform: uppercase;
-    background-color: #b25c23;
     border-radius: 15px;
     width: 80px;
     height: 40px;
-    margin: 20px 25px 20px 70%;
+    margin: -40px 25px 10px 70%;
 }
 
 .enter-button a {
     font-family: "Assistant", sans-serif;
-    font-weight: 200;
-    color: #e9f1f4;
+    font-weight: 500;
+    color: #000;
 }
 
 .footer {
     background-color: #474747;
+    border-top: 1px solid #b25c23;
 }
 
 .social-links {
@@ -118,23 +119,89 @@ h6 {
 
 /*-----------------------------------------------------------Home*/
 
+.home-wrapper {
+    margin-top: 25vh;
+}
+
+.home-background-image {
+    background: url("/assets/images/home-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.background-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.home-title {
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    color: #e9f1f4;
+    margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.home-quote {
+    margin-bottom: 24px;
+}
+
+.home-quote p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    color: #e9f1f4;
+    letter-spacing: 2px;
+}
+
+#home-enter-button {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #b25c23;
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#home-enter-button a {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    color: #e9f1f4;
+}
+
+
 /*-----------------------------------------------------------Menu*/
 
 /*-----------------------------------------------------------About*/
+
+.about-wrapper {
+    background-color: #474747;
+}
 
 .about-section {
     clear: both;
 }
 
 .about-background-image {
-    height: 100vh;
-    background: url("/assets/images/about-img.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("/assets/images/about-img.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+.about-quote {
+    margin: 0 auto;
 }
 
 .about-quote p {
@@ -142,32 +209,33 @@ h6 {
     font-weight: 200;
     text-align: center;
     font-size: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px;
     color: #e9f1f4;
     letter-spacing: 2px;
 }
 
 /*-----------------------------------------------------------Services*/
 
+.services-container {
+    background-color: #474747;
+}
+
 .services-section {
     clear: both;
 }
 
 .services-background-image {
-    height: 100vh;
-    background: url("/assets/images/services-img.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("/assets/images/services-img.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: 0;
+    height: auto;
+    max-width: 100%;
 }
 
 .services-prices-wrapper {
-    padding-left: 16px;
+    padding: 16px;
     display: inline-block;
+
 }
 
 .services-sub-heading {
@@ -177,7 +245,7 @@ h6 {
 }
 
 .services {
-    display: inline-block; 
+    display: inline-block;
 }
 
 .prices {
@@ -199,23 +267,29 @@ h6 {
 
 /*-----------------------------------------------------------Gallery*/
 
+.gallery-wrapper {
+    background-color: #474747;
+}
+
 .gallery-section {
     clear: both;
 }
 
 .gallery-background-image {
-    height: 100vh;
-    background: url("/assets/images/gallery-img.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("/assets/images/gallery-img.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery-of-images {
+    padding-top: 24px;
 }
 
 .gallery-image {
-    margin-bottom: 24px;
+    height: auto;
+    margin: 0 12px 24px 12px;
 }
 
 .gallery-image img {
@@ -241,20 +315,186 @@ h6 {
 
 /*-----------------------------------------------------------Contact*/
 
+.contact-wrapper {
+    background-color: #474747;
+}
+
 .contact-section {
     clear: both;
 }
 
 .contact-background-image {
-    height: 100vh;
-    background: url("/assets/images/alexander-andrews-586348-unsplash.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("/assets/images/alexander-andrews-586348-unsplash.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    z-index: 0;
+    height: auto;
+    max-width: 100%;
 }
 
+.contact-text {
+    font-family: "Assistant", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #e9f1f4;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-top: 8px;
+    display: block;
+}
+
+.idea-form {
+    display: block;
+}
+
+.form-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.center-form {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+#contact-button {
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 16px 0;
+    background-color: #286f31;
+    color: #e9f1f4;
+}
+
+#fullname {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#emailaddress {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#ideasummary {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
 /*-----------------------------------------------------------Media Queries*/
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        max-width: 46%;
+    }
+
+    #home-enter-button {
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #b25c23;
+        border-radius: 15px;
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #home-enter-button a {
+        font-family: "Assistant", sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+        color: #e9f1f4;
+    }
+
+    .enter-button {
+        border: 1px solid #000;
+        background-color: rgba(244, 121, 26, 0.5);
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 15px;
+        width: 80px;
+        height: 40px;
+        margin: -40px 25px 10px 88%;
+    }
+
+    .about-quote {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    .about-quote p {
+        font-family: "Assistant", sans-serif;
+        font-weight: 200;
+        text-align: center;
+        font-size: 24px;
+        padding: 16px;
+        color: #e9f1f4;
+        letter-spacing: 2px;
+    }
+
+    .home-quote p {
+        font-family: "Assistant", sans-serif;
+        font-weight: 200;
+        text-align: center;
+        font-size: 24px;
+        padding: 32px 152px;
+        margin-bottom: 36px;
+        color: #e9f1f4;
+        letter-spacing: 2px;
+    }
+
+    .menu-heading {
+        font-family: "Dosis", sans-serif;
+        font-weight: 400;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-size: 48px;
+    }
+
+    .menu-item i {
+        display: inline-block;
+        color: #000;
+        font-size: 48px;
+    }
+
+    #header-title-h1 {
+        font-size: 64px;
+    }
+
+    hr {
+        width: 240px;
+        border-top: 2px solid #b25c23;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    #contact-button {
+        margin: 16px 0;
+        background-color: #286f31;
+        color: #e9f1f4;
+        height: 50px;
+        width: 120px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .contact-text {
+        font-family: "Assistant", sans-serif;
+        font-weight: 300;
+        font-size: 36px;
+        color: #e9f1f4;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        margin-top: 8px;
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 22%;
+    }
+}
