@@ -1,65 +1,260 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam:100,200,300,400,500,600,700|Amatic+SC:100,200,300,400,500,600,700');
-
-
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,500,600,700|Dosis:300,400,500,600,700');
 
 /*-----------------------------------------------------------General*/
 
 body {
     margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 150px;
+    border-top: 2px solid #b25c23;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 .container-fluid {
     padding: 0;
+    min-width: 100%
 }
 
-/*-----------------------------------------------------------Header*/
+.background-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
 
 .header {
-    background-color: #e9f1f4;
     padding: 0;
 }
 
-
 .header-title {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 500;
-    font-size: 50px;
+    font-family: "Dosis", sans-serif;
+    text-transform: uppercase;
+    color: #e9f1f4;
+    background-color: #474747;
+    margin-top: 0;
     padding-top: 16px;
-    color: #794044;
+    padding-bottom: 16px;
+}
+
+.menu-item {
+    background-color: rgba(244,121,26,0.5);
+    text-align: center;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+.menu-item i {
+    font-size: 32px;
+    display: inline-block;
+    color: #e9f1f4;
+}
+
+.menu-heading {
+    font-family: "Dosis", sans-serif;
+    font-weight: 200;
+    color: #e9f1f4;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.enter-button {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #b25c23;
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    margin: 20px 25px 20px 70%;
+}
+
+.enter-button a {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    color: #e9f1f4;
+}
+
+.footer {
+    background-color: #474747;
+}
+
+.social-links {
+    padding-top: 16px;
+    padding-bottom: 8px;
     margin: 0;
 }
 
-.header-sub-title {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    padding: 16px 6px 16px 6px;
-    color: #794044;
-    margin: 0;
+.social-links li {
+    height: 40px;
+    width: 40px;
 }
 
-.heading-wrapper a {
-    text-decoration: none;
+.social-links i {
+    color: #e9f1f4;
+    font-size: 24px;
 }
+
+/*-----------------------------------------------------------Home*/
+
+/*-----------------------------------------------------------Menu*/
+
+/*-----------------------------------------------------------About*/
+
+.about-section {
+    clear: both;
+}
+
+.about-background-image {
+    height: 100vh;
+    background: url("/assets/images/about-img.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.about-quote p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #e9f1f4;
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------------------------------Services*/
+
+.services-section {
+    clear: both;
+}
+
+.services-background-image {
+    height: 100vh;
+    background: url("/assets/images/services-img.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.services-prices-wrapper {
+    padding-left: 16px;
+    display: inline-block;
+}
+
+.services-sub-heading {
+    font-family: "Assistant", sans-serif;
+    color: #e9f1f4;
+    padding-bottom: 12px;
+}
+
+.services {
+    display: inline-block; 
+}
+
+.prices {
+    display: inline-block;
+    margin-left: 28px;
+}
+
+.service-type p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #e9f1f4;
+}
+
+#negative-margin {
+    margin-top: -24px;
+    margin-bottom: -24px;
+}
+
+/*-----------------------------------------------------------Gallery*/
+
+.gallery-section {
+    clear: both;
+}
+
+.gallery-background-image {
+    height: 100vh;
+    background: url("/assets/images/gallery-img.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.gallery-image {
+    margin-bottom: 24px;
+}
+
+.gallery-image img {
+    border: 1px solid #b25c23;
+    height: auto;
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.image-caption {
+    border: 1px solid #e9f1f4;
+    font-family: "Assistant", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    background-color: #474747;
+    color: #e9f1f4;
+    padding: 4px 12px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/*-----------------------------------------------------------Contact*/
+
+.contact-section {
+    clear: both;
+}
+
+.contact-background-image {
+    height: 100vh;
+    background: url("/assets/images/alexander-andrews-586348-unsplash.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
 
 /*-----------------------------------------------------------Media Queries*/
-
-/*------------------Try this later when you understand more-----------------*/
-
-@media(min-width:992px) {
-    .header-image-left {
-        background: url("../images/Heading-image.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-left: 16px;
-    }
-    .header-image-right {
-        background: url("../images/Heading-image.1.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-right: 16px;
-    }
-}
-
