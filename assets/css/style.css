@@ -2,7 +2,8 @@
 
 /*-----------------------------------------------------------General*/
 
-body {
+body,
+html {
     margin: 0;
     padding: 0;
 }
@@ -28,6 +29,12 @@ h6 {
     margin: 0;
 }
 
+.content-wrapper {
+    background-color: #474747;
+    position: relative;
+    min-height: 100vh;
+}
+
 .container {
     padding-right: 0px;
     padding-left: 0px;
@@ -43,6 +50,7 @@ h6 {
 }
 
 .header-title {
+    display: inline-block;
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
     color: #e9f1f4;
@@ -50,6 +58,48 @@ h6 {
     margin-top: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.desktop-row {
+    height: 192px;
+}
+
+.desktop-menu-item {
+    text-align: center;
+    background-color: red;
+    height: 192px;
+    width: 100%;
+    border-left: 1px solid #000;
+    padding-top: 50px;
+}
+
+.desktop-menu-item i {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+}
+
+.desktop-menu-item .menu-heading {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.desktop-menu-background-image {
+    background: url("/assets/images/patrick-fore-23064-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+    transition: all .35s ease-in;
+    -webkit-transition: all .35s ease-in;
+    -moz-transition: all .35s ease-in;
+    -o-transition: all .35s ease-in;
 }
 
 .section-header {
@@ -98,7 +148,10 @@ h6 {
 
 .footer {
     background-color: #474747;
-    border-top: 1px solid #b25c23;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
 }
 
 .social-links {
@@ -124,7 +177,7 @@ h6 {
 }
 
 .home-background-image {
-    background: url("/assets/images/home-img.jpg");
+    background: url("/assets/images/ricky-kharawala-308072-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -190,6 +243,7 @@ h6 {
 
 .about-section {
     clear: both;
+    padding-bottom: 64px;
 }
 
 .about-background-image {
@@ -218,6 +272,8 @@ h6 {
 
 .services-container {
     background-color: #474747;
+    text-align: center;
+    padding-bottom: 64px;
 }
 
 .services-section {
@@ -225,7 +281,7 @@ h6 {
 }
 
 .services-background-image {
-    background: url("/assets/images/services-img.jpg");
+    background: url("/assets/images/dominik-scythe-283327-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -235,6 +291,7 @@ h6 {
 .services-prices-wrapper {
     padding: 16px;
     display: inline-block;
+    width: 100%;
 
 }
 
@@ -246,11 +303,14 @@ h6 {
 
 .services {
     display: inline-block;
+    text-align: justify;
+
 }
 
 .prices {
     display: inline-block;
     margin-left: 28px;
+    text-align: justify;
 }
 
 .service-type p {
@@ -285,6 +345,7 @@ h6 {
 
 .gallery-of-images {
     padding-top: 24px;
+    padding-bottom: 64px;
 }
 
 .gallery-image {
@@ -317,6 +378,7 @@ h6 {
 
 .contact-wrapper {
     background-color: #474747;
+    padding-bottom: 64px;
 }
 
 .contact-section {
@@ -417,7 +479,8 @@ h6 {
 
     .about-quote {
         margin: 0 auto;
-        max-width: 50%;
+        max-width: 55%;
+        padding-top: 50px;
     }
 
     .about-quote p {
@@ -469,6 +532,26 @@ h6 {
         margin-bottom: 4px;
     }
 
+    .services {
+        display: inline-block;
+        text-align: justify;
+        width: 50%;
+        padding-top: 72px;
+    }
+
+    .services-sub-heading {
+        font-size: 32px;
+    }
+
+    .service-type p {
+        font-size: 24px;
+    }
+
+    .gallery-image {
+        height: auto;
+        margin: 0 12px 24px 17px;
+    }
+
     #contact-button {
         margin: 16px 0;
         background-color: #286f31;
@@ -496,5 +579,28 @@ h6 {
 @media (min-width: 992px) {
     .col-lg-3 {
         flex: 0 0 22%;
+    }
+
+    .header-title {
+        display: inline-block;
+        font-family: "Dosis", sans-serif;
+        text-transform: uppercase;
+        color: #e9f1f4;
+        background-color: #474747;
+        margin-top: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
+
+    #header-title-h1 {
+        font-size: 48px;
+    }
+
+    hr {
+        width: 182px;
+        border-top: 2px solid #b25c23;
+        margin-top: 8px;
+        margin-bottom: 4px;
     }
 }
