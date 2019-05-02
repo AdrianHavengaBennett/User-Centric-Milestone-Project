@@ -55,9 +55,8 @@ h6 {
     text-transform: uppercase;
     color: #e9f1f4;
     background-color: #474747;
-    margin-top: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 12px;
+    padding-top: 5px;
 }
 
 .desktop-row {
@@ -76,7 +75,7 @@ h6 {
 .desktop-menu-item i {
     font-size: 48px;
     display: block;
-    color: #fff;
+    color: rgb(244, 121, 26);
 }
 
 .desktop-menu-item .menu-heading {
@@ -96,14 +95,35 @@ h6 {
     background-size: cover;
     height: auto;
     max-width: 100%;
-    transition: all .35s ease-in;
-    -webkit-transition: all .35s ease-in;
-    -moz-transition: all .35s ease-in;
-    -o-transition: all .35s ease-in;
+}
+
+.desktop-aside {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(244, 121, 26);
+}
+
+.desktop-aside i {
+    color: #000;
+    margin: 0 auto;
+    font-size: 64px;
+    padding-top: 50px;
 }
 
 .section-header {
     text-align: center;
+}
+
+.menu-anchor {
+    text-decoration: none !important;
+}
+
+.menu-anchor .menu-heading:hover {
+    color: rgb(244, 121, 26);
+}
+
+.title-anchor {
+    text-decoration: none !important;
 }
 
 .menu-item {
@@ -154,6 +174,14 @@ h6 {
     height: 64px;
 }
 
+.connect-with-me {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    color: #e9f1f4;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
 .social-links {
     padding-top: 16px;
     padding-bottom: 8px;
@@ -168,6 +196,10 @@ h6 {
 .social-links i {
     color: #e9f1f4;
     font-size: 24px;
+}
+
+.social-links i:hover {
+    color: rgb(244, 121, 26);
 }
 
 /*-----------------------------------------------------------Home*/
@@ -247,11 +279,13 @@ h6 {
 }
 
 .about-background-image {
+    display: inline-block;
     background: url("/assets/images/about-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
     max-width: 100%;
+    padding: 0;
 }
 
 .about-quote {
@@ -274,6 +308,10 @@ h6 {
     background-color: #474747;
     text-align: center;
     padding-bottom: 64px;
+}
+
+.desktop-services-container {
+    text-align: center;
 }
 
 .services-section {
@@ -335,6 +373,10 @@ h6 {
     clear: both;
 }
 
+.desktop-gallery-container {
+    text-align: center;
+}
+
 .gallery-background-image {
     background: url("/assets/images/gallery-img.jpg");
     background-repeat: no-repeat;
@@ -344,8 +386,8 @@ h6 {
 }
 
 .gallery-of-images {
-    padding-top: 24px;
-    padding-bottom: 64px;
+    padding-top: 20px;
+
 }
 
 .gallery-image {
@@ -354,7 +396,9 @@ h6 {
 }
 
 .gallery-image img {
-    border: 1px solid #b25c23;
+    border-top: 1px solid #b25c23;
+    border-left: 1px solid #b25c23;
+    border-right: 1px solid #b25c23;
     height: auto;
     max-width: 100%;
     border-top-left-radius: 15px;
@@ -362,7 +406,9 @@ h6 {
 }
 
 .image-caption {
-    border: 1px solid #e9f1f4;
+    border-left: 1px solid #e9f1f4;
+    border-right: 1px solid #e9f1f4;
+    border-bottom: 1px solid #e9f1f4;
     font-family: "Assistant", sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -379,6 +425,7 @@ h6 {
 .contact-wrapper {
     background-color: #474747;
     padding-bottom: 64px;
+    width: 100%;
 }
 
 .contact-section {
@@ -466,6 +513,16 @@ h6 {
         color: #e9f1f4;
     }
 
+    .header-title {
+        display: inline-block;
+        font-family: "Dosis", sans-serif;
+        text-transform: uppercase;
+        color: #e9f1f4;
+        background-color: #474747;
+        margin-top: 0px;
+        padding-top: 5px;
+    }
+
     .enter-button {
         border: 1px solid #000;
         background-color: rgba(244, 121, 26, 0.5);
@@ -549,7 +606,7 @@ h6 {
 
     .gallery-image {
         height: auto;
-        margin: 0 12px 24px 17px;
+        margin: 12px auto;
     }
 
     #contact-button {
@@ -577,8 +634,24 @@ h6 {
 }
 
 @media (min-width: 992px) {
+
+    .offset-lg-4 {
+        margin-left: 0;
+    }
+
     .col-lg-3 {
         flex: 0 0 22%;
+    }
+
+    .about-section {
+        clear: both;
+        padding-bottom: 0px;
+    }
+
+    .about-quote {
+        margin: 0 auto;
+        max-width: 60%;
+        padding-top: 0px;
     }
 
     .header-title {
@@ -602,5 +675,67 @@ h6 {
         border-top: 2px solid #b25c23;
         margin-top: 8px;
         margin-bottom: 4px;
+    }
+
+    .enter-button {
+        display: none;
+    }
+
+    .menu-heading {
+        display: none;
+    }
+
+    .section-header i {
+        display: none;
+    }
+
+    .about-wrapper {
+        display: none;
+    }
+
+    .services-container {
+        display: none;
+    }
+
+    .services {
+        display: inline-block;
+        text-align: justify;
+        width: 50%;
+        padding-top: 0;
+        padding-left: 28px;
+    }
+
+    .prices {
+        display: inline-block;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .gallery-wrapper {
+        display: none;
+    }
+
+    .gallery-image {
+        max-width: 25% !important;
+        margin: auto;
+    }
+
+    .contact-wrapper {
+        display: none;
+    }
+
+    .menu-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 12px 12px 60px 12px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .footer {
+        background-color: #474747;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 105px;
     }
 }

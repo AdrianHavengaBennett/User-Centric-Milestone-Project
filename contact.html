@@ -16,22 +16,78 @@
 
 <body>
     <div class="content-wrapper">
-        <header class="header text-center container-fluid">
-            <div class="header-title text-center">
-                <h1 id="header-title-h1">Adrian's</h1>
-                <hr>
-                <h1 id="header-title-h1">Workshop</h1>
+        <div class="row no-gutters container-fluid desktop-row">
+            <div class="header-title col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                <a class="title-anchor" href="index.html">
+                    <div class="header">
+                        <header class="header text-center container-fluid">
+                            <div class="header-title text-center">
+                                <h1 id="header-title-h1">Adrian's</h1>
+                                <hr>
+                                <h1 id="header-title-h1">Workshop</h1>
+                            </div>
+                        </header>
+                    </div>
+                </a>
             </div>
-        </header>
+            <div class="desktop-menu-item desktop-menu-background-image d-none d-lg-block col-lg-2">
+                <a class="menu-anchor" href="about.html">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <h2 class="menu-heading">About</h2>
+                </a>
+            </div>
+            <div class="desktop-menu-item desktop-menu-background-image d-none d-lg-block col-lg-2">
+                <a class="menu-anchor" href="services.html">
+                <i class="fa fa-server" aria-hidden="true"></i>
+                <h2 class="menu-heading">Services</h2>
+                </a>
+            </div>
+            <div class="desktop-menu-item desktop-menu-background-image d-none d-lg-block col-lg-2">
+                <a class="menu-anchor" href="gallery.html">
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                <h2 class="menu-heading">Gallery</h2>
+                </a>
+            </div>
+            <div class="desktop-menu-item desktop-menu-background-image d-none d-lg-block col-lg-2">
+                <a class="menu-anchor" href="contact.html">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h2 class="menu-heading">Contact</h2>
+                </a>
+            </div>
+        </div>
 
-        <section class="contact-section container-fluid">
 
 
 
-            <div class="contact-background-image col-xs-12">
+
+        <section class="row no-gutters contact-section container-fluid">
+            <aside class="desktop-aside text-center d-none d-lg-block col-lg-4">
+                <i class="fa fa-envelope" aria-hidden="true"><span class="sr-only">Services</span></i>
+            </aside>
+            <div class="contact-background-image col-xs-12 col-lg-8 offset-lg-4">
                 <div class="menu-item">
                     <div class="enter-button">
                         <a class="btn" href="#" role="button">Menu</a>
+                    </div>
+
+                    <!---------------------------------Content-desktop only------------------------------------------>
+                    <div class="desktpp-contact-wrapper text-center row no-gutters d-none d-lg-block">
+                        <div class="col">
+                            <h3 class="contact-text text-center">Got an idea? Let's have it!</h3>
+                            <div class="center-form">
+                                <form>
+                                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
+                                    <textarea rows="5" name="ideasummary" id="ideasummary" class="form-control" placeholder="Write your idea here ..." required></textarea>
+                                    <div class="form-row text-center">
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-secondary" id="contact-button">Fire Away!</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="section-header">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -40,6 +96,7 @@
                 </div>
             </div>
 
+            <!---------------------------------Content------------------------------------------>
             <div class="contact-wrapper row no-gutters">
                 <div class="col">
                     <h3 class="contact-text text-center">Got an idea? Let's have it!</h3>
@@ -63,6 +120,7 @@
 
         <footer class="footer text-center container-fluid">
             <div>
+                <h3 class="connect-with-me d-none d-lg-block">Connect with me</h3>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
@@ -84,7 +142,6 @@
                         <i class="fa fa-instagram" aria-hidden="true"><span class="sr-only">Instagram</span></i>
                     </a>
                     </li>
-
                 </ul>
             </div>
         </footer>
