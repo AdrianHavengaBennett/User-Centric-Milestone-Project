@@ -116,9 +116,10 @@ h6 {
 
 .menu-anchor {
     text-decoration: none !important;
+    min-height: 100%;
 }
 
-.menu-anchor .menu-heading:hover {
+.menu-heading:hover {
     color: rgb(244, 121, 26);
 }
 
@@ -738,4 +739,10 @@ h6 {
         width: 100%;
         height: 105px;
     }
+}
+
+/*-----------------------------------------------------------Hover.css*/
+
+.hvr-rectangle-out:before {
+    background-color: rgba(0, 0, 0, 0.2);
 }
