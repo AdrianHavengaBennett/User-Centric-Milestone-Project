@@ -259,6 +259,10 @@ h6 {
     margin: 0 auto;
 }
 
+#home-enter-button:hover {
+    background-color: #9e5221;
+}
+
 #home-enter-button a {
     font-family: "Assistant", sans-serif;
     font-weight: 200;
@@ -266,7 +270,88 @@ h6 {
 }
 
 
-/*-----------------------------------------------------------Menu*/
+/*-----------------------------------------------------------Nav Menu*/
+
+.nav-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("/assets/images/nav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    top: 0%;
+    /* on toggle -100% - 0% (mobile-first) */
+}
+
+.nav-menu-items-wrapper {
+    position: absolute;
+    top: 10vh;
+}
+
+.nav-menu-heading {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.nav-menu-itmes {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu-itmes i {
+    padding: 24px 12px;
+}
+
+.nav-menu-itmes li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-exit-button {
+    display: block;
+    padding: 16px;
+}
+
+.nav-exit-button i:hover {
+    font-size: 48px;
+}
+
+.nav-exit-button i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.nav-anchor {
+    text-decoration: none !important;
+}
+
+.nav-anchor i {
+    font-size: 32px;
+    display: inline-block;
+    color: #fff;
+}
+
+.nav-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+}
 
 /*-----------------------------------------------------------About*/
 
@@ -497,6 +582,22 @@ h6 {
         max-width: 46%;
     }
 
+    .nav-bar {
+        max-width: 50%;
+        left: 50%;
+        /* on toggle 100% - 50% */
+    }
+
+    .nav-overlay {
+        max-width: 50%;
+        right: 50%;
+        /* on toggle 100% - 50% */
+    }
+
+    .nav-menu-items-wrapper {
+        top: 26vh;
+    }
+
     #home-enter-button {
         text-align: center;
         text-transform: uppercase;
@@ -642,6 +743,18 @@ h6 {
 
     .col-lg-3 {
         flex: 0 0 22%;
+    }
+
+    .nav-bar {
+        max-width: 25%;
+        left: 75%;
+        /* on toggle 100% - 75% */
+    }
+
+    .nav-overlay {
+        max-width: 75%;
+        right: 25%;
+        /* on toggle 100% - 25% */
     }
 
     .about-section {
