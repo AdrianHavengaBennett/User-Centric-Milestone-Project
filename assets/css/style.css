@@ -216,7 +216,7 @@ implement this ^^ once you have a better understanding of data-toggling */
 /*-----------------------------------------------------------Home*/
 
 .home-wrapper {
-    margin-top: 25vh;
+    margin-top: 16vh;
 }
 
 .home-background-image {
@@ -288,7 +288,7 @@ implement this ^^ once you have a better understanding of data-toggling */
     height: 100vh;
     width: 100%;
     z-index: 1;
-    visibility: hidden; /* implement this once you have a better understanding of data-toggling */
+    visibility: hidden;
 }
 
 .nav-bar {
@@ -299,7 +299,7 @@ implement this ^^ once you have a better understanding of data-toggling */
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-    visibility: hidden; /* implement this once you have a better understanding of data-toggling */
+    visibility: hidden;
 }
 
 .nav-menu-items-wrapper {
@@ -332,13 +332,13 @@ implement this ^^ once you have a better understanding of data-toggling */
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-li:hover .nav-menu-heading {
+/*li:hover .nav-menu-heading {
     color: #fff;
 }
 
 li:hover i {
     color: #000;
-}
+}*/
 
 .nav-exit-button {
     display: block;
@@ -459,16 +459,15 @@ li:hover i {
     text-align: justify;
 }
 
+.service-type {
+    padding-bottom: 16px;
+}
+
 .service-type p {
     font-family: "Assistant", sans-serif;
     font-weight: 200;
     font-size: 16px;
     color: #e9f1f4;
-}
-
-.negative-margin {
-    margin-top: -24px;
-    margin-bottom: -24px;
 }
 
 #services-mobile-menu-item {
@@ -590,6 +589,10 @@ li:hover i {
     color: #e9f1f4;
 }
 
+#contact-button:hover {
+    background-color: #225e2a;
+}
+
 #fullname {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -647,6 +650,10 @@ li:hover i {
         font-size: 24px;
         font-weight: 200;
         color: #e9f1f4;
+    }
+
+    .home-wrapper {
+        margin-top: 20vh;
     }
 
     .header-title {
@@ -714,7 +721,8 @@ li:hover i {
         font-size: 48px;
     }
 
-    #header-title-1, #header-title-2 {
+    #header-title-1,
+    #header-title-2 {
         font-size: 64px;
     }
 
@@ -779,6 +787,10 @@ li:hover i {
         flex: 0 0 22%;
     }
     
+    .home-wrapper {
+        margin-top: 25vh;
+    }
+
     .header-title {
         display: inline-block;
         font-family: "Dosis", sans-serif;
@@ -791,7 +803,8 @@ li:hover i {
         padding-left: 16px;
     }
 
-    #header-title-1, #header-title-2 {
+    #header-title-1,
+    #header-title-2 {
         font-size: 48px;
     }
 
@@ -809,11 +822,11 @@ li:hover i {
     .menu-heading {
         display: none;
     }
-    
+
     .section-header i {
         display: none;
     }
-    
+
     .menu-item {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 12px 12px 60px 12px;
@@ -877,7 +890,7 @@ li:hover i {
         margin-left: 0;
         text-align: justify;
     }
-    
+
     .gallery-background-image {
         height: 100vh;
     }
@@ -890,7 +903,7 @@ li:hover i {
         max-width: 25% !important;
         margin: auto;
     }
-    
+
     .contact-background-image {
         height: 100vh;
     }
