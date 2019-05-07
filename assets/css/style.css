@@ -119,7 +119,7 @@ h6 {
     min-height: 100%;
 }
 
-.menu-heading:hover {
+.menu-anchor:hover .menu-heading {
     color: rgb(244, 121, 26);
 }
 
@@ -129,7 +129,7 @@ h6 {
 
 .menu-item {
     background-color: rgba(244, 121, 26, 0.5);
-    padding: 60px 20px;
+    padding: 15px 20px 15px 20px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -140,16 +140,25 @@ h6 {
     color: #000;
 }
 
+.mobile-menu-item {
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    width: 25%;
+    padding-bottom: 32px;
+}
+
 .menu-heading {
     font-family: "Dosis", sans-serif;
     font-weight: 400;
-    color: #000;
+    color: #e9f1f4;
     text-transform: uppercase;
     text-align: center;
     display: inline-block;
     letter-spacing: 2px;
 }
 
+/* implement this once you have a better understanding of data-toggling 
 .enter-button {
     border: 1px solid #000;
     background-color: rgba(244, 121, 26, 0.5);
@@ -166,6 +175,7 @@ h6 {
     font-weight: 500;
     color: #000;
 }
+implement this ^^ once you have a better understanding of data-toggling */
 
 .footer {
     background-color: #474747;
@@ -270,7 +280,7 @@ h6 {
 }
 
 
-/*-----------------------------------------------------------Nav Menu*/
+/*-----------------------------------------------------------Nav Menu #TODO once I've learned more about data-toggle*/
 
 .nav-overlay {
     background-color: rgba(0, 0, 0, 0.7);
@@ -278,6 +288,7 @@ h6 {
     height: 100vh;
     width: 100%;
     z-index: 1;
+    visibility: hidden; /* implement this once you have a better understanding of data-toggling */
 }
 
 .nav-bar {
@@ -288,8 +299,7 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-    top: 0%;
-    /* on toggle -100% - 0% (mobile-first) */
+    visibility: hidden; /* implement this once you have a better understanding of data-toggling */
 }
 
 .nav-menu-items-wrapper {
@@ -320,6 +330,14 @@ h6 {
 
 .nav-menu-itmes li:hover {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+li:hover .nav-menu-heading {
+    color: #fff;
+}
+
+li:hover i {
+    color: #000;
 }
 
 .nav-exit-button {
@@ -388,6 +406,10 @@ h6 {
     letter-spacing: 2px;
 }
 
+#about-mobile-menu-item {
+    color: #e9f1f4;
+}
+
 /*-----------------------------------------------------------Services*/
 
 .services-container {
@@ -444,9 +466,13 @@ h6 {
     color: #e9f1f4;
 }
 
-#negative-margin {
+.negative-margin {
     margin-top: -24px;
     margin-bottom: -24px;
+}
+
+#services-mobile-menu-item {
+    color: #e9f1f4;
 }
 
 /*-----------------------------------------------------------Gallery*/
@@ -504,6 +530,10 @@ h6 {
     padding: 4px 12px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+#gallery-mobile-menu-item {
+    color: #e9f1f4;
 }
 
 /*-----------------------------------------------------------Contact*/
@@ -573,6 +603,10 @@ h6 {
 #ideasummary {
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+#contact-mobile-menu-item {
+    color: #e9f1f4;
 }
 
 /*-----------------------------------------------------------Media Queries*/
@@ -666,7 +700,7 @@ h6 {
     .menu-heading {
         font-family: "Dosis", sans-serif;
         font-weight: 400;
-        color: #000;
+        color: #e9f1f4;
         text-transform: uppercase;
         text-align: center;
         display: inline-block;
@@ -680,7 +714,7 @@ h6 {
         font-size: 48px;
     }
 
-    #header-title-h1 {
+    #header-title-1, #header-title-2 {
         font-size: 64px;
     }
 
@@ -744,6 +778,49 @@ h6 {
     .col-lg-3 {
         flex: 0 0 22%;
     }
+    
+    .header-title {
+        display: inline-block;
+        font-family: "Dosis", sans-serif;
+        text-transform: uppercase;
+        color: #e9f1f4;
+        background-color: #474747;
+        margin-top: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
+
+    #header-title-1, #header-title-2 {
+        font-size: 48px;
+    }
+
+    hr {
+        width: 182px;
+        border-top: 2px solid #b25c23;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .enter-button {
+        display: none;
+    }
+
+    .menu-heading {
+        display: none;
+    }
+    
+    .section-header i {
+        display: none;
+    }
+    
+    .menu-item {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 12px 12px 60px 12px;
+        overflow: hidden;
+        margin: 0 auto;
+        height: inherit;
+    }
 
     .nav-bar {
         max-width: 25%;
@@ -762,45 +839,13 @@ h6 {
         padding-bottom: 0px;
     }
 
+    .about-background-image {
+        height: 100vh;
+    }
+
     .about-quote {
         margin: 0 auto;
         max-width: 60%;
-        padding-top: 0px;
-    }
-
-    .header-title {
-        display: inline-block;
-        font-family: "Dosis", sans-serif;
-        text-transform: uppercase;
-        color: #e9f1f4;
-        background-color: #474747;
-        margin-top: 0;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 16px;
-    }
-
-    #header-title-h1 {
-        font-size: 48px;
-    }
-
-    hr {
-        width: 182px;
-        border-top: 2px solid #b25c23;
-        margin-top: 8px;
-        margin-bottom: 4px;
-    }
-
-    .enter-button {
-        display: none;
-    }
-
-    .menu-heading {
-        display: none;
-    }
-
-    .section-header i {
-        display: none;
     }
 
     .about-wrapper {
@@ -819,10 +864,22 @@ h6 {
         padding-left: 28px;
     }
 
+    .services-background-image {
+        height: 100vh;
+    }
+
+    .services-prices-wrapper {
+        padding: 64px 0 0 0;
+    }
+
     .prices {
         display: inline-block;
         margin-left: 0;
         text-align: justify;
+    }
+    
+    .gallery-background-image {
+        height: 100vh;
     }
 
     .gallery-wrapper {
@@ -833,16 +890,21 @@ h6 {
         max-width: 25% !important;
         margin: auto;
     }
+    
+    .contact-background-image {
+        height: 100vh;
+    }
 
     .contact-wrapper {
         display: none;
     }
 
-    .menu-item {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 12px 12px 60px 12px;
-        overflow: hidden;
-        margin: 0 auto;
+    .contact-text {
+        padding-top: 64px;
+    }
+
+    .form-row {
+        padding-top: 8px;
     }
 
     .footer {
