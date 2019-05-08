@@ -44,7 +44,7 @@ Contact background image: Photo by Alexander Andrews on Unsplash
 Gallery images courtesy of Adrian Havenga-Bennett and also unsplash.com with credit due:
 "Garden Bench" by Jose Moreno via unsplash.com
 
-HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for <section>s without header tags.
+HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for sections without header tags.
 CSS validated via https://jigsaw.w3.org/css-validator/ - Pass
 
 I used the book "HTML&CSS - design and build websites" by Jon Duckett as a go-to reference if what I was looking for wasn't clear in the modules, on StackOverflow, and/or CSS Tricks 
