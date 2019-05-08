@@ -32,6 +32,7 @@ Clicking the title heading (any screen size) | Expected behaviour = loads home p
 
 
 "This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku)."
+ https://adrianhavengabennett.github.io/User-Centric-Milestone-Project/
 
 
 Background images courtesy of unsplash.com:
