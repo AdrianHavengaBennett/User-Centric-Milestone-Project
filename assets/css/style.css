@@ -108,6 +108,22 @@ h6 {
     margin: 0 auto;
     font-size: 64px;
     padding-top: 50px;
+    animation-name: spinning-icon;
+    animation-direction: normal;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes spinning-icon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .section-header {
@@ -379,7 +395,7 @@ li:hover i {
 
 .about-section {
     clear: both;
-    padding-bottom: 64px;
+    padding-bottom: 90px;
 }
 
 .about-background-image {
@@ -498,7 +514,7 @@ li:hover i {
 
 .gallery-of-images {
     padding-top: 20px;
-
+    padding-bottom: 80px;
 }
 
 .gallery-image {
@@ -679,7 +695,7 @@ li:hover i {
 
     .about-quote {
         margin: 0 auto;
-        max-width: 55%;
+        max-width: 70%;
         padding-top: 50px;
     }
 
@@ -853,7 +869,7 @@ li:hover i {
     }
 
     .about-background-image {
-        height: 100vh;
+        height: 77vh;
     }
 
     .about-quote {
@@ -878,7 +894,7 @@ li:hover i {
     }
 
     .services-background-image {
-        height: 100vh;
+        height: 77vh;
     }
 
     .services-prices-wrapper {
@@ -892,7 +908,7 @@ li:hover i {
     }
 
     .gallery-background-image {
-        height: 100vh;
+        height: 77vh;
     }
 
     .gallery-wrapper {
@@ -905,7 +921,7 @@ li:hover i {
     }
 
     .contact-background-image {
-        height: 100vh;
+        height: 77vh;
     }
 
     .contact-wrapper {
