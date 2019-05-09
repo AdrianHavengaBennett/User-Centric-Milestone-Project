@@ -90,7 +90,7 @@ h6 {
 }
 
 .desktop-menu-background-image {
-    background: url("/assets/images/patrick-fore-23064-unsplash.jpg");
+    background: url("../../assets/images/patrick-fore-23064-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
