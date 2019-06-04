@@ -5,7 +5,9 @@ function menuToggleMobile() {
     navElMobileTwo.style.visibility = "visible";
     
     let navPlayState = document.getElementById("nav-bar");
+    let navOverlayPlayState = document.getElementById("nav-overlay");
     navPlayState.style.animationPlayState = "running";
+    navOverlayPlayState.style.animationPlayState = "running";
 }
 
 function menuToggle() {
@@ -15,7 +17,9 @@ function menuToggle() {
     navElTwo.style.visibility = "visible";
     
     let navPlayState = document.getElementById("nav-bar");
+    let navOverlayPlayState = document.getElementById("nav-overlay");
     navPlayState.style.animationPlayState = "running";
+    navOverlayPlayState.style.animationPlayState = "running";
 }
 
 
