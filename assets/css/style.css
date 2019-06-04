@@ -174,8 +174,8 @@ h6 {
     letter-spacing: 2px;
 }
 
-/* implement this once you have a better understanding of data-toggling 
-.enter-button {
+/* data-toggling */
+#enter-button {
     border: 1px solid #000;
     background-color: rgba(244, 121, 26, 0.5);
     text-align: center;
@@ -183,15 +183,15 @@ h6 {
     border-radius: 15px;
     width: 80px;
     height: 40px;
-    margin: -40px 25px 10px 70%;
+    margin: 0px 25px 10px 70%;
 }
 
-.enter-button a {
+#enter-button a {
     font-family: "Assistant", sans-serif;
     font-weight: 500;
-    color: #000;
+    color: #fff;
 }
-implement this ^^ once you have a better understanding of data-toggling */
+/* data-toggling */
 
 .footer {
     background-color: #474747;
@@ -298,7 +298,7 @@ implement this ^^ once you have a better understanding of data-toggling */
 
 /*-----------------------------------------------------------Nav Menu #TODO once I've learned more about data-toggle*/
 
-.nav-overlay {
+#nav-overlay {
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     height: 100vh;
@@ -307,11 +307,11 @@ implement this ^^ once you have a better understanding of data-toggling */
     visibility: hidden;
 }
 
-.nav-bar {
+#nav-bar {
     position: absolute;
     height: 100vh;
     width: 100%;
-    background: url("/assets/images/nav.jpg");
+    background: url("../../assets/images/nav.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -348,13 +348,17 @@ implement this ^^ once you have a better understanding of data-toggling */
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/*li:hover .nav-menu-heading {
+li:hover .nav-menu-heading {
     color: #fff;
 }
 
-li:hover i {
+li:hover .nav-anchor i {
     color: #000;
-}*/
+}
+
+.nav-footer li:hover i {
+    color: #000;
+}
 
 .nav-exit-button {
     display: block;
@@ -831,7 +835,7 @@ li:hover i {
         margin-bottom: 4px;
     }
 
-    .enter-button {
+    #enter-button {
         display: none;
     }
 
@@ -851,13 +855,13 @@ li:hover i {
         height: inherit;
     }
 
-    .nav-bar {
+    #nav-bar {
         max-width: 25%;
         left: 75%;
         /* on toggle 100% - 75% */
     }
 
-    .nav-overlay {
+    #nav-overlay {
         max-width: 75%;
         right: 25%;
         /* on toggle 100% - 25% */

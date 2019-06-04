@@ -17,12 +17,12 @@
 </head>
 
 <body>
-    <!-- implement this once you have a better understanding of data-toggling -->
-    <!--<div class="nav-overlay d-lg-none"></div>-->
-    <!--<div class="nav-bar d-lg-none">
+    
+    <div id="nav-overlay" class="d-lg-none"></div>
+    <div id="nav-bar" class="d-lg-none">
         <div class="nav-menu-items-wrapper text-center container-fluid">
             <div class="nav-exit-button">
-                <a class="btn" href="index.html" role="button">
+                <a class="btn" href="services.html" role="button">
                     <i class="fa fa-times-circle" aria-hidden="true"><span class="sr-only">Exit menu</span></i>
                 </a>
             </div>
@@ -79,8 +79,7 @@
                 </ul>
             </div>
         </footer>
-    </div>-->
-    <!-- implement this ^^ once you have a better understanding of data-toggling -->
+    </div>
 
     <div class="content-wrapper">
         <div class="row no-gutters container-fluid desktop-row">
@@ -119,42 +118,12 @@
             </aside>
             <div class="services-background-image col-xs-12 col-lg-8 offset-lg-4">
                 <div class="menu-item">
-                    <div class="row no-gutters container-fluid">
-                        <div class="mobile-menu-item d-lg-none col-xs-3">
-                            <div class="section-header">
-                                <a href="about.html">
-                                <i class="fa fa-question-circle" aria-hidden="true"><span class="sr-only">About</span></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mobile-menu-item d-lg-none col-xs-3">
-                            <div class="section-header">
-                                <a href="services.html">
-                                <i id="services-mobile-menu-item" class="fa fa-server" aria-hidden="true"><span class="sr-only">Services</span></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mobile-menu-item d-lg-none col-xs-3">
-                            <div class="section-header">
-                                <a href="gallery.html">
-                                <i class="fa fa-camera-retro" aria-hidden="true"><span class="sr-only">Gallery</span></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mobile-menu-item d-lg-none col-xs-3">
-                            <div class="section-header">
-                                <a href="contact.html">
-                                <i class="fa fa-envelope" aria-hidden="true"><span class="sr-only">Contact</span></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    
 
-                    <!-- implement this once you have a better understanding of data-toggling -->
-                    <!--<div class="enter-button">
-                        <a class="btn" href="#" role="button">Menu</a>
-                    </div>-->
-                    <!-- implement this ^^ once you have a better understanding of data-toggling -->
+                    
+                    <div id="enter-button">
+                        <a onclick="menuToggleMobile()" class="btn" href="#" role="button">Menu</a>
+                    </div>
 
 
                     <!--                                     Content - desktop only                                           -->
@@ -280,6 +249,7 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>
