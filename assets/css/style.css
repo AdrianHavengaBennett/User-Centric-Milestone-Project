@@ -315,7 +315,20 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    animation-name: animation;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-play-state: paused;
     visibility: hidden;
+}
+
+@keyframes animation {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%
+    }
 }
 
 .nav-menu-items-wrapper {
@@ -639,13 +652,13 @@ li:hover .nav-anchor i {
         max-width: 46%;
     }
 
-    .nav-bar {
+    #nav-bar {
         max-width: 50%;
         left: 50%;
         /* on toggle 100% - 50% */
     }
 
-    .nav-overlay {
+    #nav-overlay {
         max-width: 50%;
         right: 50%;
         /* on toggle 100% - 50% */
