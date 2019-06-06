@@ -1,27 +1,16 @@
-function menuToggleMobile() {
-    let navElMobile = document.getElementById("nav-bar");
-    let navElMobileTwo = document.getElementById("nav-overlay");
-    navElMobile.style.visibility = "visible";
-    navElMobileTwo.style.visibility = "visible";
-    
-    let navPlayState = document.getElementById("nav-bar");
-    let navOverlayPlayState = document.getElementById("nav-overlay");
-    navPlayState.style.animationPlayState = "running";
-    navOverlayPlayState.style.animationPlayState = "running";
-}
-
 function menuToggle() {
-    let navElOne = document.getElementById("nav-bar");
-    let navElTwo = document.getElementById("nav-overlay");
-    navElOne.style.visibility = "visible";
-    navElTwo.style.visibility = "visible";
+    let navElOverlay = document.getElementById("nav-overlay");
+    navElOverlay.style.visibility = "visible";
     
     let navPlayState = document.getElementById("nav-bar");
-    let navOverlayPlayState = document.getElementById("nav-overlay");
     navPlayState.style.animationPlayState = "running";
+    
+    let navOverlayPlayState = document.getElementById("nav-overlay");
     navOverlayPlayState.style.animationPlayState = "running";
 }
 
-
+document.addEventListener("onclick", function(event) {
+    menuToggle();
+});
 
 

@@ -296,7 +296,7 @@ h6 {
 }
 
 
-/*-----------------------------------------------------------Nav Menu #TODO once I've learned more about data-toggle*/
+/*-----------------------------------------------------------Nav Menu*/
 
 #nav-overlay {
     background-color: rgba(0, 0, 0, 0.7);
@@ -306,6 +306,7 @@ h6 {
     z-index: 1;
     animation-name: nav-overlay-animation;
     animation-direction: normal;
+    animation-timing-function: ease;
     animation-duration: 1s;
     animation-play-state: paused;
     visibility: hidden;
@@ -330,9 +331,9 @@ h6 {
     z-index: 1;
     animation-name: nav-bar-animation;
     animation-direction: normal;
+    animation-timing-function: ease;
     animation-duration: 1s;
     animation-play-state: paused;
-    visibility: hidden;
 }
 
 @keyframes nav-bar-animation {

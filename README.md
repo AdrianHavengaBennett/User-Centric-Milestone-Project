@@ -7,8 +7,7 @@ This website should be a go-to for someone struggling with a practical issue or 
 
 # UX
 
-The wireframe, which can be found in images/wireframe, I created right at the start of this project is slightly different than what was designed here at the first stage - the reason for this is detailed in the text below. 
-This wireframe will still be honoured with the correct technologies, however. To be continued.
+The wireframe for this project can be found in images/wireframe.
 
 ## Features
 
@@ -19,15 +18,14 @@ Desktop menu and footer items dazzle you when hovered.
 
 ### - Features left to implement
 
-Future ideas for this project include a toggle navigation bar for mobile and ipad, as well as for home page across all screen sizes. I tried to implement this with just my current knowledge of HTML/CSS but it was proving far too challenging and I would have probably simply copied and pasted someone else's code to achieve it, without knowing how that code is even working. 
-I opted instead for a simple icon-only menu bar for mobile and ipad. The home page's (on any screen size) enter button takes you straight to the about page. I have hidden the nav menu buttons and all options to use the nav bar and will simply reinstate them, and remove the icon-only menu bar, once I have learned JavaScript/JQuery because my research online 
-suggests it may be easier with this technology.
+*insert features left to implement*
 
 ## Technologies Used
 
 Technologies used in this project thus far:
 HTML5
 CSS3
+Javascript
 Bootstrap 4
 
 ## Testing
@@ -44,7 +42,7 @@ Clicking the title heading (any screen size) | Expected behaviour = loads home p
 HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for sections without header tags.
 CSS validated via https://jigsaw.w3.org/css-validator/ - Pass
 
-https://adrianhavengabennett.github.io/User-Centric-Milestone-Project/
+*insert GitHub pages link here*
 
 ## Credits
 
