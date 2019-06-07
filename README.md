@@ -43,7 +43,7 @@ Navigating through nav bar (mobile/ipad) | Expected behaviour = smooth navigatio
 HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for sections without header tags.
 CSS validated via https://jigsaw.w3.org/css-validator/ - Pass
 
-
+Github Pages link: https://adrianhavengabennett.github.io/User-Centric-Milestone-Project/
 
 ## Credits
 
