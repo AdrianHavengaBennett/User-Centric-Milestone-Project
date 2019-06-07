@@ -22,6 +22,7 @@ function menuToggle() {
     
 }
 
+
 function navExit() {
     let navElOverlay = document.getElementById("nav-overlay");
     navElOverlay.style.visibility = "hidden";
