@@ -334,6 +334,7 @@ h6 {
     animation-timing-function: ease;
     animation-duration: 1s;
     animation-play-state: paused;
+    visibility: hidden;
 }
 
 @keyframes nav-bar-animation {

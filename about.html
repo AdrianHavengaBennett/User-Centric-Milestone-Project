@@ -22,7 +22,10 @@
     <div id="nav-bar" class="d-lg-none">
         <div class="nav-menu-items-wrapper text-center container-fluid">
             <div class="nav-exit-button">
-                <a onclick="navExit()" class="btn" href="about.html" role="button">
+                
+                <!-- About Nav calls navExit() but it's not behaving as expected -->
+                
+                <a onclick="navExit()" class="btn" href="#" role="button">
                     <i class="fa fa-times-circle" aria-hidden="true"><span class="sr-only">Exit menu</span></i>
                 </a>
             </div>
@@ -190,6 +193,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 

@@ -18,7 +18,7 @@ Desktop menu and footer items dazzle you when hovered.
 
 ### - Features left to implement
 
-*insert features left to implement*
+There are currently no features left to implement as the project is completed to the expectation of what's it was designed for (student project).
 
 ## Technologies Used
 
@@ -36,13 +36,14 @@ Changing viewport to landscape | Expected behaviour = content fills the landscap
 Clicking "Fire Away!" with empty form fields | Expected behaviour = error message | Pass
 Hovering anywhere in the desktop menu boxes | Expected behaviour = anchor tag should be clickable anywhere within the idividual boxes | Pass
 Clicking the title heading (any screen size) | Expected behaviour = loads home page | Pass
+Navigating through nav bar (mobile/ipad) | Expected behaviour = smooth navigation between pages / exiting back to current page when closing | Pass
 
 ## Deployment
 
 HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for sections without header tags.
 CSS validated via https://jigsaw.w3.org/css-validator/ - Pass
 
-*insert GitHub pages link here*
+
 
 ## Credits
 
