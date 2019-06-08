@@ -1,6 +1,6 @@
 # Adrian's Workshop
 
-Welcome to Adrian's Workshop!
+### Welcome to Adrian's Workshop!
 
 This webpage is aimed at anyone interested in woodwork, and who's not afraid to get covered in saw dust! 
 This website should be a go-to for someone struggling with a practical issue or even a technical one, within reason. Above all else, this page should inspire creativity.
@@ -23,8 +23,8 @@ I used https://balsamiq.com/ to help me with my wireframe.
 
 ### - Existing features
 
-Desktop aside icons dance upon page loads.
-Desktop menu and footer items dazzle you when hovered.
+- Desktop aside icons dance upon page loads.
+- Desktop menu and footer items dazzle you when hovered.
 
 ### - Features left to implement
 
@@ -32,7 +32,7 @@ There are currently no features left to implement as the project is completed to
 
 ## Technologies Used
 
-Technologies used in this project thus far:
+Technologies used in this project:
 
 ### HTML5: 
 - https://en.wikipedia.org/wiki/HTML
