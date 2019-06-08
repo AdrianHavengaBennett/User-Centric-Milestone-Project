@@ -7,7 +7,17 @@ This website should be a go-to for someone struggling with a practical issue or 
 
 # UX
 
-The wireframe for this project can be found in images/wireframe.
+## Wireframe
+
+I used https://balsamiq.com/ to help me with my wireframe.
+
+### Desktop Wireframe
+
+![Desktop wireframe](assets/images/wireframe/Desktop _ iPad Pro.png)
+
+### Mobile Wireframe
+
+![Mobile wireframe](assets/images/wireframe/Smartphone _ iPad.png)
 
 ## Features
 
@@ -23,27 +33,45 @@ There are currently no features left to implement as the project is completed to
 ## Technologies Used
 
 Technologies used in this project thus far:
-HTML5
-CSS3
-Javascript
-Bootstrap 4
+
+### HTML5: 
+- https://en.wikipedia.org/wiki/HTML
+
+### CSS3: 
+- https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+
+### Javascript: 
+- https://en.wikipedia.org/wiki/JavaScript
+
+### Bootstrap 4: 
+- https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
 
 ## Testing
 
 The following test cases have been performed to test funtionality:
-Navigating within pages, using the menu items | Expected behaviour = the different pages loading without new windows/tabs opening | Pass
-Changing viewport to landscape | Expected behaviour = content fills the landscape view | Pass
-Clicking "Fire Away!" with empty form fields | Expected behaviour = error message | Pass
-Hovering anywhere in the desktop menu boxes | Expected behaviour = anchor tag should be clickable anywhere within the idividual boxes | Pass
-Clicking the title heading (any screen size) | Expected behaviour = loads home page | Pass
-Navigating through nav bar (mobile/ipad) | Expected behaviour = smooth navigation between pages / exiting back to current page when closing | Pass
+
+- Navigating within pages, using the menu items | Expected behaviour = the different pages loading without new windows/tabs opening | Pass
+- Changing viewport to landscape | Expected behaviour = content fills the landscape view | Pass
+- Clicking "Fire Away!" with empty form fields | Expected behaviour = error message | Pass
+- Hovering anywhere in the desktop menu boxes | Expected behaviour = anchor tag should be clickable anywhere within the idividual boxes | Pass
+- Clicking the title heading (any screen size) | Expected behaviour = loads home page | Pass
+- Navigating through nav bar (mobile/ipad) | Expected behaviour = smooth navigation between pages / exiting back to current page when closing | Pass
+
+- HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for sections without header tags.
+- CSS validated via https://jigsaw.w3.org/css-validator/ - Pass
 
 ## Deployment
 
-HTML validated via https://validator.w3.org/ - received errors for duplicate ids and warnings for sections without header tags.
-CSS validated via https://jigsaw.w3.org/css-validator/ - Pass
+For this project, I have used Github Pages to deploy and host the application.
 
-Github Pages link: https://adrianhavengabennett.github.io/User-Centric-Milestone-Project/
+Below are the steps I have taken to achieve this:
+
+1. Navigate to "settings";
+2. Scroll down to "GitHub Pages" section;
+3. Selected "master branch" and deployed.
+
+### Github Pages link: 
+- https://adrianhavengabennett.github.io/User-Centric-Milestone-Project/
 
 ## Credits
 

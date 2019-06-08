@@ -191,7 +191,6 @@ h6 {
     font-weight: 500;
     color: #fff;
 }
-/* data-toggling */
 
 .footer {
     background-color: #474747;
@@ -232,24 +231,21 @@ h6 {
 /*-----------------------------------------------------------Home*/
 
 .home-wrapper {
-    margin-top: 16vh;
+    width: 100%;
+    position: absolute;
+    margin-top: 15vh;
+    margin-bottom: 60px;
 }
 
 .home-background-image {
-    background: url("../../assets/images/ricky-kharawala-308072-unsplash.jpg");
-    background-repeat: no-repeat;
+    position: fixed;
     background-size: cover;
-    height: 100vh;
-    max-width: 100%;
-}
-
-.background-image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    height: -webkit-fill-available;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    -moz-filter: brightness(40%);
+    -o-filter: brightness(40%);
 }
 
 .home-title {
@@ -295,13 +291,12 @@ h6 {
     color: #e9f1f4;
 }
 
-
 /*-----------------------------------------------------------Nav Menu*/
 
 #nav-overlay {
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: -webkit-fill-available;
     width: 100%;
     z-index: 1;
     animation-name: nav-overlay-animation;
@@ -323,6 +318,7 @@ h6 {
 
 #nav-bar {
     position: absolute;
+    display: flex;
     height: 100vh;
     width: 100%;
     background: url("../../assets/images/nav.jpg");
@@ -442,6 +438,7 @@ li:hover .nav-anchor i {
 
 .about-quote {
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .about-quote p {
@@ -670,13 +667,11 @@ li:hover .nav-anchor i {
     #nav-bar {
         max-width: 50%;
         left: 50%;
-        /* on toggle 100% - 50% */
     }
 
     #nav-overlay {
         max-width: 50%;
         right: 50%;
-        /* on toggle 100% - 50% */
     }
 
     .nav-menu-items-wrapper {
@@ -822,7 +817,6 @@ li:hover .nav-anchor i {
         margin-top: 8px;
         display: block;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -886,13 +880,11 @@ li:hover .nav-anchor i {
     #nav-bar {
         max-width: 25%;
         left: 75%;
-        /* on toggle 100% - 75% */
     }
 
     #nav-overlay {
         max-width: 75%;
         right: 25%;
-        /* on toggle 100% - 25% */
     }
 
     .about-section {
@@ -901,7 +893,8 @@ li:hover .nav-anchor i {
     }
 
     .about-background-image {
-        height: 77vh;
+        height: auto;
+        padding-bottom: 60px;
     }
 
     .about-quote {
@@ -926,7 +919,8 @@ li:hover .nav-anchor i {
     }
 
     .services-background-image {
-        height: 77vh;
+        height: auto;
+        padding-bottom: 60px;
     }
 
     .services-prices-wrapper {
@@ -940,7 +934,8 @@ li:hover .nav-anchor i {
     }
 
     .gallery-background-image {
-        height: 77vh;
+        height: auto;
+        padding-bottom: 60px;
     }
 
     .gallery-wrapper {
@@ -953,7 +948,8 @@ li:hover .nav-anchor i {
     }
 
     .contact-background-image {
-        height: 77vh;
+        height: auto;
+        padding-bottom: 60px;
     }
 
     .contact-wrapper {

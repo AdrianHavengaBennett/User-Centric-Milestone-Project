@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
+    <title>Adrian's Workshop</title>
+    
+    <!--********** 3rd party libraries **********-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
 
+    <!--********** Custom CSS **********-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
-    <title>Adrian's Workshop</title>
 </head>
 
 <body>
-
+    <!--********** Navigation Start **********-->
     <div id="nav-overlay" class="d-lg-none"></div>
     <div id="nav-bar" class="d-lg-none">
         <div class="nav-menu-items-wrapper text-center container-fluid">
             <div class="nav-exit-button">
-                
-                <!-- About Nav calls navExit() but it's not behaving as expected -->
-                
-                <a onclick="navExit()" class="btn" href="#" role="button">
+                <a class="btn" href="#" role="button">
                     <i class="fa fa-times-circle" aria-hidden="true"><span class="sr-only">Exit menu</span></i>
                 </a>
             </div>
@@ -61,30 +59,31 @@
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></i>
-                    </a>
+                            <i class="fa fa-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
-                        <i class="fa fa-youtube" aria-hidden="true"><span class="sr-only">YouTube</span></i>
-                    </a>
+                            <i class="fa fa-youtube" aria-hidden="true"><span class="sr-only">YouTube</span></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
-                        <i class="fa fa-facebook" aria-hidden="true"><span class="sr-only">Facebook</span></i>
-                    </a>
+                            <i class="fa fa-facebook" aria-hidden="true"><span class="sr-only">Facebook</span></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#" target="_blank">
-                        <i class="fa fa-instagram" aria-hidden="true"><span class="sr-only">Instagram</span></i>
-                    </a>
+                            <i class="fa fa-instagram" aria-hidden="true"><span class="sr-only">Instagram</span></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </footer>
     </div>
-
-
+    <!--********** Navigation End **********-->
+    
+    <!--********** Title start **********-->
     <div class="content-wrapper">
         <div class="row no-gutters container-fluid desktop-row">
             <a href="index.html" class="header-title title-anchor col-xs-12 col-sm-12 col-md-12 col-lg-4">
@@ -98,6 +97,9 @@
                     </header>
                 </div>
             </a>
+            <!--********** Title End **********-->
+            
+            <!--********** Desktop Menu Start **********-->
             <a href="about.html" class="hvr-rectangle-out menu-anchor desktop-menu-item desktop-menu-background-image d-none d-lg-block col-lg-2">
                 <i class="fa fa-question-circle" aria-hidden="true"></i>
                 <h2 class="menu-heading">About</h2>
@@ -115,42 +117,37 @@
                 <h2 class="menu-heading">Contact</h2>
             </a>
         </div>
+        <!--********** Desktop Menu End **********-->
 
         <section class="row no-gutters about-section container-fluid">
             <aside class="desktop-aside text-center d-none d-lg-block col-lg-4">
                 <i class="fa fa-question-circle" aria-hidden="true"><span class="sr-only">About</span></i>
             </aside>
             <div class="about-background-image col-xs-12 col-lg-8 offset-lg-4">
-                <div class="menu-item">
+                <div id="enter-button">
+                    <a onclick="menuToggle()" class="btn" href="#" role="button">Menu</a>
+                </div>
 
-
-
-                    <div id="enter-button">
-                        <a onclick="menuToggle()" class="btn" href="#" role="button">Menu</a>
-                    </div>
-
-
-                    <!--                      Content - desktop only                           -->
-                    <div class="desktop-about-wrapper d-none d-lg-block">
-                        <div class="about-quote">
-                            <p>
-                                Welcome to Adrian's Workshop!
-                            </p>
-                            <p>
-                                Adrian once lived in a small flat in London. He then decided to move his little family to West Wales, where suddenly he found himself owning a garage. Snubbing the car, Adrian decided to buy a bunch of tools so that he could fix things around his new
-                                house. And before he knew it, woodwork had charmed his socks off. He always had a passion for woodwork, from as early as grade seven, and now he's decided to seek profit from his newfound, dare he say, skill for the craft.
-                                Grab some safety gear and follow me!
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="section-header">
-
-                        <h2 class="menu-heading">About</h2>
+                <!--********** Desktop Only Content Start **********-->
+                <div class="desktop-about-wrapper d-none d-lg-block">
+                    <div class="about-quote">
+                        <p>
+                            Welcome to Adrian's Workshop!
+                        </p>
+                        <p>
+                            Adrian once lived in a small flat in London. He then decided to move his little family to West Wales, where suddenly he found himself owning a garage. Snubbing the car, Adrian decided to buy a bunch of tools so that he could fix things around his new
+                            house. And before he knew it, woodwork had charmed his socks off. He always had a passion for woodwork, from as early as grade seven, and now he's decided to seek profit from his newfound, dare he say, skill for the craft.
+                            Grab some safety gear and follow me!
+                        </p>
                     </div>
                 </div>
+                <div class="section-header">
+                    <h2 class="menu-heading">About</h2>
+                </div>
             </div>
-            <!--                                    Content                                 -->
+            <!--********** Desktop Only Content End **********-->
+            
+            <!--********** Mobile Only Content Start **********-->
             <div class="about-wrapper">
                 <div class="about-quote">
                     <p>
@@ -164,7 +161,9 @@
                 </div>
             </div>
         </section>
+        <!--********** Mobile Only Content End **********-->
 
+        <!--********** Footer Start **********-->
         <footer class="footer text-center container-fluid">
             <div>
                 <h3 class="connect-with-me d-none d-lg-block">Connect with me</h3>
@@ -193,7 +192,9 @@
             </div>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--********** Footer End **********-->
+    
+    <!--********** Custom JavaScript *********-->
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
