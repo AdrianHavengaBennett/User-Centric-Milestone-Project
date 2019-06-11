@@ -183,7 +183,7 @@ h6 {
     border-radius: 15px;
     width: 80px;
     height: 40px;
-    margin: 0px 25px 10px 70%;
+    margin: 8px 25px 10px 70%;
 }
 
 #enter-button a {
@@ -319,7 +319,7 @@ h6 {
 #nav-bar {
     position: absolute;
     display: flex;
-    height: 100vh;
+    height: 100vh !important;
     width: 100%;
     background: url("../../assets/images/nav.jpg");
     background-repeat: no-repeat;
@@ -438,7 +438,6 @@ li:hover .nav-anchor i {
 
 .about-quote {
     margin: 0 auto;
-    padding-bottom: 60px;
 }
 
 .about-quote p {
@@ -465,6 +464,7 @@ li:hover .nav-anchor i {
 
 .desktop-services-container {
     text-align: center;
+    padding-bottom: 64px;
 }
 
 .services-section {
@@ -533,6 +533,10 @@ li:hover .nav-anchor i {
     text-align: center;
 }
 
+.desktop-gallery-wrapper {
+    padding-bottom: 64px;
+}
+
 .gallery-background-image {
     background: url("../../assets/images/gallery-img.jpg");
     background-repeat: no-repeat;
@@ -586,6 +590,10 @@ li:hover .nav-anchor i {
     background-color: #474747;
     padding-bottom: 64px;
     width: 100%;
+}
+
+.desktop-contact-wrapper {
+    padding-bottom: 64px;
 }
 
 .contact-section {
@@ -900,6 +908,7 @@ li:hover .nav-anchor i {
     .about-quote {
         margin: 0 auto;
         max-width: 60%;
+        padding-bottom: 60px;
     }
 
     .about-wrapper {

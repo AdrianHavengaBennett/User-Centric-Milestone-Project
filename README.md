@@ -13,11 +13,11 @@ I used https://balsamiq.com/ to help me with my wireframe.
 
 ### Desktop Wireframe
 
-![Desktop wireframe](assets/images/wireframe/Desktop _ iPad Pro.png)
+![Desktop wireframe](https://github.com/AdrianHavengaBennett/User-Centric-Milestone-Project/blob/master/assets/images/wireframe/Desktop%20_%20iPad%20Pro.png)
 
 ### Mobile Wireframe
 
-![Mobile wireframe](assets/images/wireframe/Smartphone _ iPad.png)
+![Mobile wireframe](https://github.com/AdrianHavengaBennett/User-Centric-Milestone-Project/blob/master/assets/images/wireframe/Smartphone%20_%20iPad.png)
 
 ## Features
 
