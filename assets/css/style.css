@@ -4,8 +4,11 @@
 
 body,
 html {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 p {
@@ -436,6 +439,7 @@ li:hover .nav-anchor i {
     background: url("../../assets/images/about-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #474747;
     height: auto;
     max-width: 100%;
     padding: 0;
@@ -480,6 +484,7 @@ li:hover .nav-anchor i {
     background: url("../../assets/images/dominik-scythe-283327-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #474747;
     height: auto;
     max-width: 100%;
 }
@@ -546,6 +551,7 @@ li:hover .nav-anchor i {
     background: url("../../assets/images/gallery-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #474747;
     height: auto;
     max-width: 100%;
 }
@@ -609,6 +615,7 @@ li:hover .nav-anchor i {
     background: url("../../assets/images/alexander-andrews-586348-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #474747;
     height: auto;
     max-width: 100%;
 }
