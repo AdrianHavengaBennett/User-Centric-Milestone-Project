@@ -114,7 +114,7 @@ h6 {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    
+
 }
 
 @keyframes spinning-icon {
@@ -141,6 +141,11 @@ h6 {
 
 .title-anchor {
     text-decoration: none !important;
+}
+
+.mobile-overlay {
+    background-color: rgba(244, 121, 26, 0.5);
+    padding-top: 12px;
 }
 
 .menu-item {
@@ -172,9 +177,9 @@ h6 {
     text-align: center;
     display: inline-block;
     letter-spacing: 2px;
+    padding-bottom: 8px;
 }
 
-/* data-toggling */
 #enter-button {
     border: 1px solid #000;
     background-color: rgba(244, 121, 26, 0.5);
@@ -183,7 +188,7 @@ h6 {
     border-radius: 15px;
     width: 80px;
     height: 40px;
-    margin: 8px 25px 10px 70%;
+    margin: 0px 25px 10px 70%;
 }
 
 #enter-button a {
@@ -836,7 +841,7 @@ li:hover .nav-anchor i {
     .col-lg-3 {
         flex: 0 0 22%;
     }
-    
+
     .home-wrapper {
         margin-top: 25vh;
     }
