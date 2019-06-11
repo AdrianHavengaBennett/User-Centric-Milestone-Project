@@ -67,7 +67,8 @@ For this project, I have used Github Pages to deploy and host the application.
 Below are the steps I have taken to achieve this:
 
 1. Navigate to "settings";
-2. Scroll down to "GitHub Pages" section;
+2. Scroll down to "GitHub Pages" section:
+![GitHub pages]()
 3. Selected "master branch" and deployed.
 
 ### Github Pages link: 
