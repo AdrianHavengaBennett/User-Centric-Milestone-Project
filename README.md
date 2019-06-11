@@ -67,9 +67,10 @@ For this project, I have used Github Pages to deploy and host the application.
 Below are the steps I have taken to achieve this:
 
 1. Navigate to "settings";
-2. Scroll down to "GitHub Pages" section:
-![GitHub pages]()
+2. Scroll down to "GitHub Pages" section (see image below);
 3. Selected "master branch" and deployed.
+
+![GitHub pages](https://github.com/AdrianHavengaBennett/User-Centric-Milestone-Project/blob/master/assets/images/deployment/GitHub_Pages.JPG)
 
 ### Github Pages link: 
 - https://adrianhavengabennett.github.io/User-Centric-Milestone-Project/
